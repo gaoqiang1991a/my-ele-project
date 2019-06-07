@@ -54,7 +54,8 @@
         <div class="pic-wrapper" ref="picWrapper">
           <ul class="pic-list" ref="picList">
             <li class="pic-item" v-for="(pic, index) in seller.pics" :key="index">
-              <img :src="pic" width="120" height="90">
+              <!-- 使用vue-photo-preview插件 实现点击图片预览的效果 -->
+              <img :src="pic" width="120" height="90" preview="1">
             </li>
           </ul>
         </div>
